@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="Deleted config.properties">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests.yml" afterDir="false" />
+    <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="Test run tests from ci/cd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/config/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/tests.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740331532220</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test run tests from ci/cd">
+      <option name="closed" value="true" />
+      <created>1740332562981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740332562981</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,6 +315,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted config.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted config.properties" />
+    <MESSAGE value="Test run tests from ci/cd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test run tests from ci/cd" />
   </component>
 </project>
