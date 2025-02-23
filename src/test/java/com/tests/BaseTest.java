@@ -7,7 +7,6 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.options.Cookie;
 import com.pages.BasePage;
-import com.pages.CartPage;
 import com.pages.LoginPage;
 import com.pages.ProductsPage;
 import com.utils.BasePageFactory;
