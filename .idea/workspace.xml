@@ -5,40 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/components/BaseComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/components/Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/components/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/components/SortOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/config/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/config/ConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/models/ShipInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/ProductsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/CartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/ProductsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/BasePageFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/BrowserFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/BrowserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +48,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="512546fd-0cd7-4423-9571-7211448e9bec" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -159,11 +129,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/sergkovalev/Java projects/Java_UI",
+    "last_opened_file_path": "/Users/sergkovalev/Java projects/playwright-java-ui-tests",
     "onboarding.tips.debug.path": "/Users/sergkovalev/Java projects/Java_UI/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.CartTest.testItemBuy">
