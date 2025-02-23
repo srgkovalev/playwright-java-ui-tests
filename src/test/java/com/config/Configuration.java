@@ -25,4 +25,10 @@ public interface Configuration extends Config {
     int slowMotion();
 
     int timeout();
+
+    String userName();
+
+    String userPass();
+
+    String userNameSession();
 }

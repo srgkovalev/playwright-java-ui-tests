@@ -1,5 +1,6 @@
 package com.tests;
 
+import com.config.Configuration;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
@@ -11,6 +12,7 @@ import com.pages.LoginPage;
 import com.pages.ProductsPage;
 import com.utils.BasePageFactory;
 import com.utils.BrowserManager;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.*;
 
 import java.util.List;
@@ -21,10 +23,11 @@ import static com.config.ConfigurationManager.config;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public abstract class BaseTest {
 
-//    FIXME
-    private String userName = "user";
-    private String userPass = "pass";
-    private String userNameSession = "userNameSession";
+    private static final Configuration secrets = ConfigFactory.create(Configuration.class);
+
+    private String userName = secrets.userName();
+    private String userPass = secrets.userPass();
+    private String userNameSession = secrets.userNameSession();
 
     protected Playwright playwright;
     protected Browser browser;
@@ -68,13 +71,6 @@ public abstract class BaseTest {
             productsPage = createInstance(ProductsPage.class);
         }
         return productsPage;
-    }
-
-    protected CartPage getCartPage() {
-        if (cartPage == null) {
-            cartPage = createInstance(CartPage.class);
-        }
-        return cartPage;
     }
 
     public void setUpWithCookies() {
