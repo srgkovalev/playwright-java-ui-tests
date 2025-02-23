@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/components/BaseComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/components/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/components/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/components/SortOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/config/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/config/ConfigurationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/models/ShipInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pages/ProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/CartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/ProductsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/BasePageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/BrowserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/BrowserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Java_UI" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2sRUy8g0oqGFVepZVTgyCStAaFF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.CartTest (1).executor": "Run",
+    "Gradle.CartTest.executor": "Run",
+    "Gradle.CartTest.testAddItemToCardAndRemove (1).executor": "Run",
+    "Gradle.CartTest.testAddItemToCardAndRemove.executor": "Run",
+    "Gradle.CartTest.testAddItemToCartAndBuy (1).executor": "Run",
+    "Gradle.CartTest.testAddItemToCartAndBuy.executor": "Run",
+    "Gradle.CartTest.testCart (1).executor": "Run",
+    "Gradle.CartTest.testCart.executor": "Run",
+    "Gradle.CartTest.testCartPageWithItemAttributes (1).executor": "Run",
+    "Gradle.CartTest.testCartPageWithItemAttributes.executor": "Run",
+    "Gradle.CartTest.testCartPageWithItemsAttributes (1).executor": "Run",
+    "Gradle.CartTest.testCartPageWithItemsAttributes.executor": "Run",
+    "Gradle.CartTest.testCorrectAddItemToCart.executor": "Run",
+    "Gradle.CartTest.testItemBuy.executor": "Run",
+    "Gradle.Java_UI [:Main.main()].executor": "Run",
+    "Gradle.LoginTest.executor": "Run",
+    "Gradle.LoginTest.testCorrectAllUIElements (1).executor": "Run",
+    "Gradle.LoginTest.testCorrectAllUIElements.executor": "Run",
+    "Gradle.LoginTest.testCorrectLoginCredentials (1).executor": "Run",
+    "Gradle.LoginTest.testCorrectLoginCredentials.executor": "Run",
+    "Gradle.LoginTest.testInvalidLoginCredentials (1).executor": "Run",
+    "Gradle.LoginTest.testInvalidLoginCredentials.executor": "Run",
+    "Gradle.LoginTest.testLockedOutUser (1).executor": "Run",
+    "Gradle.LoginTest.testLockedOutUser.executor": "Run",
+    "Gradle.LoginTest.testLoginPageElements (1).executor": "Run",
+    "Gradle.LoginTest.testLoginPageElements.executor": "Run",
+    "Gradle.LoginTest.testLoginPageUIElementsAreDisplayedCorrectly (1).executor": "Run",
+    "Gradle.LoginTest.testLoginPageUIElementsAreDisplayedCorrectly.executor": "Run",
+    "Gradle.LoginTest.testSuccessfulLogout (1).executor": "Run",
+    "Gradle.LoginTest.testSuccessfulLogout.executor": "Run",
+    "Gradle.MainPageTest.testGetElementsInMainPage (1).executor": "Run",
+    "Gradle.MainPageTest.testGetElementsInMainPage.executor": "Run",
+    "Gradle.MainPageTest.testGetPopularRequests (1).executor": "Run",
+    "Gradle.MainPageTest.testGetPopularRequests.executor": "Run",
+    "Gradle.MainPageTest.testGetUIElementsInMainPage (1).executor": "Run",
+    "Gradle.MainPageTest.testGetUIElementsInMainPage.executor": "Run",
+    "Gradle.MainPageTest.testValidMainPage (1).executor": "Run",
+    "Gradle.MainPageTest.testValidMainPage.executor": "Run",
+    "Gradle.ProductsTest.testAddItemToCart (1).executor": "Run",
+    "Gradle.ProductsTest.testAddItemToCart.executor": "Run",
+    "Gradle.ProductsTest.testAddItemToCartState (1).executor": "Run",
+    "Gradle.ProductsTest.testAddItemToCartState.executor": "Run",
+    "Gradle.ProductsTest.testAddItemToCartValidation (1).executor": "Run",
+    "Gradle.ProductsTest.testAddItemToCartValidation.executor": "Run",
+    "Gradle.ProductsTest.testAddToCart (1).executor": "Run",
+    "Gradle.ProductsTest.testAddToCart.executor": "Run",
+    "Gradle.ProductsTest.testAddToCartValidation (1).executor": "Run",
+    "Gradle.ProductsTest.testAddToCartValidation.executor": "Run",
+    "Gradle.ProductsTest.testSortItems (1).executor": "Run",
+    "Gradle.ProductsTest.testSortItems.executor": "Run",
+    "Gradle.ProductsTest.testSortingItemsHighToLowPrice.executor": "Run",
+    "Gradle.ProductsTest.testSortingItemsInReverseOrder (1).executor": "Run",
+    "Gradle.ProductsTest.testSortingItemsInReverseOrder.executor": "Run",
+    "Gradle.ProductsTest.testSortingItemsLowToHighPrice.executor": "Run",
+    "Gradle.ProductsTest.testSuccessfulLogout (1).executor": "Run",
+    "Gradle.ProductsTest.testSuccessfulLogout.executor": "Run",
+    "Gradle.SearchTest.testGetSuggestPopularRequests (1).executor": "Run",
+    "Gradle.SearchTest.testGetSuggestPopularRequests.executor": "Run",
+    "Gradle.SearchTest.testSearchByText (1).executor": "Run",
+    "Gradle.SearchTest.testSearchByText.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sergkovalev/Java projects/Java_UI",
+    "onboarding.tips.debug.path": "/Users/sergkovalev/Java projects/Java_UI/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.CartTest.testItemBuy">
+    <configuration name="CartTest.testAddItemToCardAndRemove (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.tests.CartTest.testAddItemToCardAndRemove&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CartTest.testAddItemToCartAndBuy (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.tests.CartTest.testAddItemToCartAndBuy&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CartTest.testCartPageWithItemAttributes (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.tests.CartTest.testCartPageWithItemAttributes&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CartTest.testCartPageWithItemsAttributes (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.tests.CartTest.testCartPageWithItemsAttributes&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CartTest.testItemBuy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.tests.CartTest.testItemBuy&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CartTest.testItemBuy" />
+        <item itemvalue="Gradle.CartTest.testAddItemToCartAndBuy (1)" />
+        <item itemvalue="Gradle.CartTest.testCartPageWithItemsAttributes (1)" />
+        <item itemvalue="Gradle.CartTest.testCartPageWithItemAttributes (1)" />
+        <item itemvalue="Gradle.CartTest.testAddItemToCardAndRemove (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="" />
+      <created>1738418132959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738418132959</updated>
+    </task>
+    <servers />
+  </component>
+</project>
