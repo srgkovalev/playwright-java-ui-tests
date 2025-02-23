@@ -3,7 +3,7 @@ name: Run Playwright Tests
 on:
   push:
     branches:
-      - main
+      - config-with-secrets
   pull_request:
 
 jobs:
