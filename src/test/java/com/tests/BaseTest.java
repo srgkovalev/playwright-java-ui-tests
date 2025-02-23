@@ -36,7 +36,6 @@ public abstract class BaseTest {
 
     private LoginPage loginPage;
     private ProductsPage productsPage;
-    private CartPage cartPage;
 
     public String getUserName() {
         return userName;

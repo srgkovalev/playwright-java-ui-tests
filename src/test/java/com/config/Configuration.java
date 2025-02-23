@@ -5,8 +5,8 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties",
-        "classpath:config.properties",
         "system:env",
+        "classpath:config.properties"
 })
 public interface Configuration extends Config {
 

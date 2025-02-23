@@ -11,9 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      USER_NAME: ${{ secrets.USER_NAME }}
-      USER_PASS: ${{ secrets.USER_PASS }}
-      USER_NAME_SESSION: ${{ secrets.USER_NAME_SESSION }}
+        BASE_URL: ${{ secrets.BASE_URL }}
+        DOMAIN: ${{ secrets.DOMAIN }}
+        PRODUCT_PATH: ${{ secrets.PRODUCT_PATH }}
+        CART_PATH: ${{ secrets.CART_PATH }}
+        BROWSER: ${{ secrets.BROWSER }}
+        HEADLESS: ${{ secrets.HEADLESS }}
+        SLOW_MOTION: ${{ secrets.SLOW_MOTION }}
+        TIMEOUT: ${{ secrets.TIMEOUT }}
+        USER_NAME: ${{ secrets.USER_NAME }}
+        USER_PASS: ${{ secrets.USER_PASS }}
+        USER_NAME_SESSION: ${{ secrets.USER_NAME_SESSION }}
 
     steps:
       - name: Checkout code
@@ -33,4 +41,15 @@ jobs:
 
       - name: Run tests with Gradle
         run: |
-          ./gradlew test -DuserName="$USER_NAME" -DuserPass="$USER_PASS" -DuserNameSession="$USER_NAME_SESSION"
+          ./gradlew test \
+            -Dbase.url="$BASE_URL" \
+            -Ddomain="$DOMAIN" \
+            -Dproduct.path="$PRODUCT_PATH" \
+            -Dcart.path="$CART_PATH" \
+            -Dbrowser="$BROWSER" \
+            -Dheadless="$HEADLESS" \
+            -Dslow.motion="$SLOW_MOTION" \
+            -Dtimeout="$TIMEOUT" \
+            -DuserName="$USER_NAME" \
+            -DuserPass="$USER_PASS" \
+            -DuserNameSession="$USER_NAME_SESSION"
