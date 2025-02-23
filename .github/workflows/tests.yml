@@ -25,5 +25,12 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run tests
-        run: mvn test -DuserName="$USER_NAME" -DuserPass="$USER_PASS" -DuserNameSession="$USER_NAME_SESSION"
+      - name: Check directory structure
+        run: ls -la  # Проверяем, где находится build.gradle
+
+      - name: Grant execute permission for Gradle wrapper
+        run: chmod +x gradlew  # Даем права на выполнение Gradle wrapper
+
+      - name: Run tests with Gradle
+        run: |
+          ./gradlew test -DuserName="$USER_NAME" -DuserPass="$USER_PASS" -DuserNameSession="$USER_NAME_SESSION"

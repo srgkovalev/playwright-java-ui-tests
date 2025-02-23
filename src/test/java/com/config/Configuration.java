@@ -3,7 +3,11 @@ package com.config;
 import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
-@Config.Sources({"system:properties", "classpath:config.properties"})
+@Config.Sources({
+        "system:properties",
+        "classpath:config.properties",
+        "system:env",
+})
 public interface Configuration extends Config {
 
     @Key("base.url")
