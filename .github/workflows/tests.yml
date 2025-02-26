@@ -33,11 +33,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Install dependencies with Gradle
-        run: ./gradlew dependencies  # Устанавливаем все зависимости, включая Playwright
-
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+      - name: Install Playwright
+        run: |
+            npm install playwright@1.41.0  # Устанавливаем нужную версию
+            npx playwright install --with-deps  # Устанавливаем браузеры
 
       - name: Check directory structure
         run: ls -la  # Проверяем, где находится build.gradle
