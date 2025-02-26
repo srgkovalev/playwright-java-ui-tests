@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/models/ShipInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/models/ShipInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="Test run tests from ci/cd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +140,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.ProductsTest.testSortingItemsInReverseOrder">
+  <component name="RunManager" selected="Gradle.LoginTest.testCorrectLoginCredentials (1)">
     <configuration name="CartTest.testAddItemToCartAndBuy (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -218,7 +213,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest.testCorrectLoginCredentials" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest.testCorrectLoginCredentials (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -268,8 +263,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LoginTest.testCorrectLoginCredentials (1)" />
         <item itemvalue="Gradle.ProductsTest.testSortingItemsInReverseOrder" />
-        <item itemvalue="Gradle.LoginTest.testCorrectLoginCredentials" />
         <item itemvalue="Gradle.CartTest.testItemBuy" />
         <item itemvalue="Gradle.CartTest.testAddItemToCartAndBuy (1)" />
         <item itemvalue="Gradle.CartTest.testCartPageWithItemsAttributes (1)" />
@@ -285,6 +280,19 @@
       <option name="presentableId" value="Default" />
       <updated>1738418132959</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test run tests from ci/cd">
+      <option name="closed" value="true" />
+      <created>1740594617005</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740594617005</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test run tests from ci/cd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test run tests from ci/cd" />
   </component>
 </project>
