@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="Test run tests from ci/cd" />
+    <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/models/ShipInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/models/ShipInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +52,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="use-lombok" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,12 +145,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/.github/workflows" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Gradle.LoginTest.testSuccessfulLogout">
+  <component name="RunManager" selected="Gradle.ProductsTest.testSortingItemsInReverseOrder">
     <configuration name="CartTest.testAddItemToCartAndBuy (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,30 +160,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.tests.CartTest.testAddItemToCartAndBuy&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CartTest.testCartPageWithItemAttributes (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.tests.CartTest.testCartPageWithItemAttributes&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -242,7 +218,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest.testSuccessfulLogout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest.testCorrectLoginCredentials" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -255,7 +231,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.tests.LoginTest.testSuccessfulLogout&quot;" />
+            <option value="&quot;com.tests.LoginTest.testCorrectLoginCredentials&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductsTest.testSortingItemsInReverseOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.tests.ProductsTest.testSortingItemsInReverseOrder&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -268,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LoginTest.testSuccessfulLogout" />
+        <item itemvalue="Gradle.ProductsTest.testSortingItemsInReverseOrder" />
+        <item itemvalue="Gradle.LoginTest.testCorrectLoginCredentials" />
         <item itemvalue="Gradle.CartTest.testItemBuy" />
         <item itemvalue="Gradle.CartTest.testAddItemToCartAndBuy (1)" />
         <item itemvalue="Gradle.CartTest.testCartPageWithItemsAttributes (1)" />
-        <item itemvalue="Gradle.CartTest.testCartPageWithItemAttributes (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -285,79 +285,6 @@
       <option name="presentableId" value="Default" />
       <updated>1738418132959</updated>
     </task>
-    <task id="LOCAL-00001" summary="Deleted config.properties">
-      <option name="closed" value="true" />
-      <created>1740331532220</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1740331532220</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Test run tests from ci/cd">
-      <option name="closed" value="true" />
-      <created>1740332562981</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1740332562981</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Test run tests from ci/cd">
-      <option name="closed" value="true" />
-      <created>1740333391556</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1740333391556</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Test run tests from ci/cd">
-      <option name="closed" value="true" />
-      <created>1740333627677</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1740333627677</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Test run tests from ci/cd">
-      <option name="closed" value="true" />
-      <created>1740334389790</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1740334389790</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Test run tests from ci/cd">
-      <option name="closed" value="true" />
-      <created>1740335305101</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1740335305101</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Test run tests from ci/cd">
-      <option name="closed" value="true" />
-      <created>1740337434776</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1740337434776</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Deleted config.properties" />
-    <MESSAGE value="Test run tests from ci/cd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test run tests from ci/cd" />
   </component>
 </project>

@@ -3,7 +3,6 @@ package com.models;
 import lombok.Builder;
 import lombok.Data;
 
-// Data чтобы гетеры/сеторы работали
 @Data
 // Builder чтобы из теста задавать значения
 @Builder

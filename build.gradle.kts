@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    // lombok заменяет геттеры/сеттеры
     id("io.freefair.lombok") version "8.11"
 }
 

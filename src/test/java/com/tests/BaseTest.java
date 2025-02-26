@@ -11,6 +11,7 @@ import com.pages.LoginPage;
 import com.pages.ProductsPage;
 import com.utils.BasePageFactory;
 import com.utils.BrowserManager;
+import lombok.Data;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.*;
 
@@ -18,7 +19,8 @@ import java.util.List;
 
 import static com.config.ConfigurationManager.config;
 
-// Данная аннотации позволяет создавать экземпляр класса лишь 1 раз при запуске множества тестов
+@Data
+// Данная аннотация позволяет создавать экземпляр класса лишь 1 раз при запуске множества тестов
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public abstract class BaseTest {
 
@@ -35,18 +37,6 @@ public abstract class BaseTest {
 
     private LoginPage loginPage;
     private ProductsPage productsPage;
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public String getUserPass() {
-        return userPass;
-    }
-
-    public String getUserNameSession() {
-        return userNameSession;
-    }
 
     @BeforeAll
     public void createContext() {
