@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - config-with-secrets
-  pull_request:
+  workflow_dispatch:  # Позволяет запускать вручную из GitHub Actions
 
 jobs:
   test:

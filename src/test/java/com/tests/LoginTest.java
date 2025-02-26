@@ -49,7 +49,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void testCorrectLoginCredentials() {
+    public void correctLoginCredentials() {
         getLoginPage().open();
         ProductsPage productsPage = getLoginPage().loginAs(getUserName(), getUserPass());
         assertThat(productsPage.getTitle()).hasText("Products");
@@ -57,7 +57,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void testSuccessfulLogout() {
+    public void successfulLogout() {
         getLoginPage().open();
         getLoginPage().loginAs(getUserName(), getUserPass())
                 .clickOnLogout();
@@ -65,7 +65,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void testInvalidLoginCredentials() {
+    public void InvalidLoginCredentials() {
         getLoginPage().open();
         getLoginPage().loginAs("fake", "fake");
         assertThat(getLoginPage().getErrMsgContainer())

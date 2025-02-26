@@ -22,7 +22,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void testSortingItemsInReverseOrder() {
+    public void sortingItemsInReverseOrder() {
         getProductsPage().open();
         getProductsPage().setSortFilter(SortOrder.NAME_DESC.getSortValue());
 
@@ -35,7 +35,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void testSortingItemsLowToHighPrice() {
+    public void sortingItemsLowToHighPrice() {
         getProductsPage().open();
         getProductsPage().setSortFilter(SortOrder.PRICE_ASC.getSortValue());
 
@@ -53,7 +53,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void testAddItemToCartValidation() {
+    public void addItemToCartValidation() {
         Header header = new Header(page);
         getProductsPage().open();
 

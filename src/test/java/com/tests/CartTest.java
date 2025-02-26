@@ -20,7 +20,7 @@ public class CartTest extends BaseTest {
     }
 
     @Test
-    public void testCartPageWithItemsAttributes() {
+    public void cartPageWithItemsAttributes() {
         ProductsPage productsPage = getProductsPage().open();
         Locator items = productsPage.getProductNames();
         String productName = "";
@@ -43,7 +43,7 @@ public class CartTest extends BaseTest {
     }
 
     @Test
-    public void testAddItemToCardAndRemove() {
+    public void addItemToCardAndRemove() {
         Header header = new Header(page);
         getProductsPage().open();
         String productName = getProductsPage().getProductNames().first().innerText();
@@ -55,7 +55,7 @@ public class CartTest extends BaseTest {
     }
 
     @Test
-    public void testItemBuy() {
+    public void itemBuy() {
         getProductsPage().open();
         String productName = getProductsPage().getProductNames().first().innerText();
 
