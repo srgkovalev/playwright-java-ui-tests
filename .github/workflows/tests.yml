@@ -35,6 +35,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      # Устанавливаем Playwright и браузеры через npm
+      - name: Install Playwright and dependencies
+        run: |
+           npm init -y  # Создаст package.json, если его нет
+           npm install playwright@latest --save-dev
+           npx playwright install --with-deps
+
       # Обновляем зависимости и строим проект (с пропуском тестов)
       - name: Build & Install
         run: ./gradlew build -x test
