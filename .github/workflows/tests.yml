@@ -31,11 +31,6 @@ jobs:
           npx playwright --version
           npx playwright install --dry-run  # Показывает, какие браузеры будут установлены
 
-      - name: Ensure Playwright can launch
-        run: |
-          npx playwright install --with-deps
-          npx playwright browsers-path
-
       - name: Check directory structure
         run: ls -la | grep -v 'node_modules\|.git'
 
