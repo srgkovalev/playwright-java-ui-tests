@@ -10,19 +10,6 @@ jobs:
   test:
     runs-on: ubuntu-22.04
 
-    env:
-        BASE_URL: ${{ secrets.BASE_URL }}
-        DOMAIN: ${{ secrets.DOMAIN }}
-        PRODUCT_PATH: ${{ secrets.PRODUCT_PATH }}
-        CART_PATH: ${{ secrets.CART_PATH }}
-        BROWSER: ${{ secrets.BROWSER }}
-        HEADLESS: ${{ secrets.HEADLESS }}
-        SLOW_MOTION: ${{ secrets.SLOW_MOTION }}
-        TIMEOUT: ${{ secrets.TIMEOUT }}
-        USER_NAME: ${{ secrets.USER_NAME }}
-        USER_PASS: ${{ secrets.USER_PASS }}
-        USER_NAME_SESSION: ${{ secrets.USER_NAME_SESSION }}
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -35,26 +22,38 @@ jobs:
 
       - name: Install Playwright
         run: |
-            npm install playwright@1.41.0  # Устанавливаем нужную версию
-            npx playwright install # Устанавливаем браузеры
+            npm install playwright@1.41.0
+            npx playwright install
+          
+      - name: Check Playwright version and browsers
+        run: |
+          npx playwright --version
+          npx playwright show-browsers
 
       - name: Check directory structure
-        run: ls -la  # Проверяем, где находится build.gradle
+        run: ls -la
 
       - name: Grant execute permission for Gradle wrapper
         run: chmod +x gradlew  # Даем права на выполнение Gradle wrapper
 
+      - name: Debug environment variables
+        run: env | grep -E "BASE_URL|DOMAIN|PRODUCT_PATH|CART_PATH|BROWSER|HEADLESS|SLOW_MOTION|TIMEOUT|USER_NAME|USER_PASS|USER_NAME_SESSION"
+
+      - name: Debug Java properties
+        run: java -XshowSettings:properties -version
+
       - name: Run tests with Gradle
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          DOMAIN: ${{ secrets.DOMAIN }}
+          PRODUCT_PATH: ${{ secrets.PRODUCT_PATH }}
+          CART_PATH: ${{ secrets.CART_PATH }}
+          BROWSER: ${{ secrets.BROWSER }}
+          HEADLESS: ${{ secrets.HEADLESS }}
+          SLOW_MOTION: ${{ secrets.SLOW_MOTION }}
+          TIMEOUT: ${{ secrets.TIMEOUT }}
+          USER_NAME: ${{ secrets.USER_NAME }}
+          USER_PASS: ${{ secrets.USER_PASS }}
+          USER_NAME_SESSION: ${{ secrets.USER_NAME_SESSION }}
         run: |
-          ./gradlew test \
-            -Dbase.url="$BASE_URL" \
-            -Ddomain="$DOMAIN" \
-            -Dproduct.path="$PRODUCT_PATH" \
-            -Dcart.path="$CART_PATH" \
-            -Dbrowser="$BROWSER" \
-            -Dheadless="$HEADLESS" \
-            -Dslow.motion="$SLOW_MOTION" \
-            -Dtimeout="$TIMEOUT" \
-            -DuserName="$USER_NAME" \
-            -DuserPass="$USER_PASS" \
-            -DuserNameSession="$USER_NAME_SESSION"
+          ./gradlew test
