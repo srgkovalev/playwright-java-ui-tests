@@ -3,7 +3,7 @@ name: Run Playwright Tests
 on:
   push:
     branches:
-      - config-with-secrets
+      - main
   # Позволяет запускать вручную из GitHub Actions
   workflow_dispatch:
 
