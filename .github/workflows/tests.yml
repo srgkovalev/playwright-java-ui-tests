@@ -4,12 +4,26 @@ on:
   push:
     branches:
       - config-with-secrets
-  workflow_dispatch:  # Позволяет запускать вручную из GitHub Actions
+  # Позволяет запускать вручную из GitHub Actions
+  workflow_dispatch:
 
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+
+    env:
+      BASE_URL: ${{ secrets.BASE_URL }}
+      DOMAIN: ${{ secrets.DOMAIN }}
+      PRODUCT_PATH: ${{ secrets.PRODUCT_PATH }}
+      CART_PATH: ${{ secrets.CART_PATH }}
+      BROWSER: ${{ secrets.BROWSER }}
+      HEADLESS: ${{ secrets.HEADLESS }}
+      SLOW_MOTION: ${{ secrets.SLOW_MOTION }}
+      TIMEOUT: ${{ secrets.TIMEOUT }}
+      USER_NAME: ${{ secrets.USER_NAME }}
+      USER_PASS: ${{ secrets.USER_PASS }}
+      USER_NAME_SESSION: ${{ secrets.USER_NAME_SESSION }}
 
     steps:
       - name: Checkout code
@@ -21,12 +35,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Install Playwright and dependencies
-        run: |
-          npm init -y  # Создаст package.json, если его нет
-          npm install playwright@latest --save-dev
-          npx playwright install --with-deps
-
       # Обновляем зависимости и строим проект (с пропуском тестов)
       - name: Build & Install
         run: ./gradlew build -x test
@@ -36,9 +44,6 @@ jobs:
         run: |
           npx playwright --version
           npx playwright install --dry-run
-
-      - name: Check directory structure
-        run: ls -la | grep -v 'node_modules\|.git'
 
       # Даем права на выполнение Gradle wrapper
       - name: Grant execute permission for Gradle wrapper
@@ -69,18 +74,4 @@ jobs:
             USER_NAME_SESSION: ${{ secrets.USER_NAME_SESSION }}
 
       - name: Run tests with Gradle
-        env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          DOMAIN: ${{ secrets.DOMAIN }}
-          PRODUCT_PATH: ${{ secrets.PRODUCT_PATH }}
-          CART_PATH: ${{ secrets.CART_PATH }}
-          BROWSER: ${{ secrets.BROWSER }}
-          HEADLESS: ${{ secrets.HEADLESS }}
-          SLOW_MOTION: ${{ secrets.SLOW_MOTION }}
-          TIMEOUT: ${{ secrets.TIMEOUT }}
-          USER_NAME: ${{ secrets.USER_NAME }}
-          USER_PASS: ${{ secrets.USER_PASS }}
-          USER_NAME_SESSION: ${{ secrets.USER_NAME_SESSION }}
-        run: |
-          chmod +x gradlew
-          ./gradlew test
+        run: ./gradlew test
