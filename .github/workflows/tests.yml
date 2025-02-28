@@ -31,9 +31,11 @@ jobs:
       - name: Build & Install
         run: ./gradlew build -x test
 
-          # Убедимся, что Playwright и браузеры установлены
-      - name: Ensure browsers are installed
-        run: ./gradlew playwrightInstall
+      # Убедимся, что Playwright и браузеры установлены
+      - name: Check Playwright version and browsers
+        run: |
+          npx playwright --version
+          npx playwright install --dry-run
 
       - name: Check directory structure
         run: ls -la | grep -v 'node_modules\|.git'
