@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    // lombok заменяет геттеры/сеттеры
     id("io.freefair.lombok") version "8.11"
 }
 
@@ -15,7 +16,7 @@ dependencies {
     implementation(platform("org.junit:junit-bom:5.10.0"))
     implementation("org.junit.jupiter:junit-jupiter")
     // Использование браузеров, эмуляция устройств и сетевых условий, интеграция с CI
-    implementation("com.microsoft.playwright:playwright:1.41.0")
+    implementation("com.microsoft.playwright:playwright:1.31.0")
     // Для удобного чтения конфигов
     implementation("org.aeonbits.owner:owner:1.0.12")
     // Для логирования

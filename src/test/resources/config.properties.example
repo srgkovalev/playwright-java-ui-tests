@@ -1,0 +1,11 @@
+base.url=https://www.saucedemo.com/
+domain=www.saucedemo.com
+product.path=inventory.html
+cart.path=cart.html
+browser=chromium
+headless=false
+slow.motion=50
+timeout=3000
+userName=
+userPass=
+userNameSession=

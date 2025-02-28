@@ -1,30 +1,34 @@
 package com.tests;
 
+import com.config.Configuration;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.options.Cookie;
 import com.pages.BasePage;
-import com.pages.CartPage;
 import com.pages.LoginPage;
 import com.pages.ProductsPage;
 import com.utils.BasePageFactory;
 import com.utils.BrowserManager;
+import lombok.Data;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.*;
 
 import java.util.List;
 
 import static com.config.ConfigurationManager.config;
 
-// Данная аннотации позволяет создавать экземпляр класса лишь 1 раз при запуске множества тестов
+@Data
+// Данная аннотация позволяет создавать экземпляр класса лишь 1 раз при запуске множества тестов
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public abstract class BaseTest {
 
-//    FIXME
-    private String userName = "user";
-    private String userPass = "pass";
-    private String userNameSession = "userNameSession";
+    private static final Configuration secrets = ConfigFactory.create(Configuration.class);
+
+    private String userName = secrets.userName();
+    private String userPass = secrets.userPass();
+    private String userNameSession = secrets.userNameSession();
 
     protected Playwright playwright;
     protected Browser browser;
@@ -33,19 +37,6 @@ public abstract class BaseTest {
 
     private LoginPage loginPage;
     private ProductsPage productsPage;
-    private CartPage cartPage;
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public String getUserPass() {
-        return userPass;
-    }
-
-    public String getUserNameSession() {
-        return userNameSession;
-    }
 
     @BeforeAll
     public void createContext() {
@@ -68,13 +59,6 @@ public abstract class BaseTest {
             productsPage = createInstance(ProductsPage.class);
         }
         return productsPage;
-    }
-
-    protected CartPage getCartPage() {
-        if (cartPage == null) {
-            cartPage = createInstance(CartPage.class);
-        }
-        return cartPage;
     }
 
     public void setUpWithCookies() {

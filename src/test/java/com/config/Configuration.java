@@ -3,7 +3,11 @@ package com.config;
 import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
-@Config.Sources({"system:properties", "classpath:config.properties"})
+@Config.Sources({
+        "system:properties",
+        "system:env",
+        "classpath:config.properties"
+})
 public interface Configuration extends Config {
 
     @Key("base.url")
@@ -25,4 +29,10 @@ public interface Configuration extends Config {
     int slowMotion();
 
     int timeout();
+
+    String userName();
+
+    String userPass();
+
+    String userNameSession();
 }
