@@ -30,20 +30,14 @@ public abstract class BaseTest {
     private String userPass = secrets.userPass();
     private String userNameSession = secrets.userNameSession();
 
-    protected Playwright playwright;
-    protected Browser browser;
-    protected BrowserContext browserContext;
     protected Page page;
-
     private LoginPage loginPage;
     private ProductsPage productsPage;
 
     @BeforeAll
     public void createContext() {
-        playwright = Playwright.create();
-        browser = BrowserManager.getBrowser(playwright);
-        browserContext = browser.newContext();
-        page = browserContext.newPage();
+        BrowserManager.initialize();
+        page = BrowserManager.getPage();
     }
 
     // Ленивая инициализация страниц (создается только если вызвали)
@@ -66,7 +60,7 @@ public abstract class BaseTest {
         sessionCookie.domain = config().domain();
         sessionCookie.path = "/";
 
-        browserContext.addCookies(List.of(sessionCookie));
+        page.context().addCookies(List.of(sessionCookie));
     }
 
     protected <T extends BasePage> T createInstance(Class<T> basePage) {
@@ -75,7 +69,6 @@ public abstract class BaseTest {
 
     @AfterAll
     public void close() {
-        browser.close();
-        playwright.close();
+        BrowserManager.close();
     }
 }

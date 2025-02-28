@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="074a00e7-b8a3-4e60-9b5d-a5efda92167b" name="Changes" comment="Test run tests from ci/cd">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/tests.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/config/ConfigurationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/config/ConfigurationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/utils/BrowserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/utils/BrowserManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,8 +146,8 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.LoginTest.correctLoginCredentials">
-    <configuration name="CartTest.testAddItemToCartAndBuy (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CartTest.cartPageWithItemsAttributes">
+    <configuration name="CartTest.cartPageWithItemsAttributes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +160,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.tests.CartTest.testAddItemToCartAndBuy&quot;" />
+            <option value="&quot;com.tests.CartTest.cartPageWithItemsAttributes&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,7 +171,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CartTest.testItemBuy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +184,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.tests.CartTest.testItemBuy&quot;" />
+            <option value="&quot;com.tests.LoginTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -193,7 +195,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest.correctLoginCredentials" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest.correctLoginCredentials (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -217,7 +219,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest.testCorrectLoginCredentials (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ProductsTest.addItemToCartValidation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -230,7 +232,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.tests.LoginTest.testCorrectLoginCredentials&quot;" />
+            <option value="&quot;com.tests.ProductsTest.addItemToCartValidation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -241,7 +243,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductsTest.testSortingItemsInReverseOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ProductsTest.sortingItemsLowToHighPrice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -254,7 +256,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.tests.ProductsTest.testSortingItemsInReverseOrder&quot;" />
+            <option value="&quot;com.tests.ProductsTest.sortingItemsLowToHighPrice&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -267,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LoginTest.correctLoginCredentials" />
-        <item itemvalue="Gradle.LoginTest.testCorrectLoginCredentials (1)" />
-        <item itemvalue="Gradle.ProductsTest.testSortingItemsInReverseOrder" />
-        <item itemvalue="Gradle.CartTest.testItemBuy" />
-        <item itemvalue="Gradle.CartTest.testAddItemToCartAndBuy (1)" />
+        <item itemvalue="Gradle.CartTest.cartPageWithItemsAttributes" />
+        <item itemvalue="Gradle.ProductsTest.addItemToCartValidation" />
+        <item itemvalue="Gradle.ProductsTest.sortingItemsLowToHighPrice" />
+        <item itemvalue="Gradle.LoginTest.correctLoginCredentials (1)" />
+        <item itemvalue="Gradle.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +350,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740751227075</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Test run tests from ci/cd">
+      <option name="closed" value="true" />
+      <created>1740752205964</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740752205964</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Test run tests from ci/cd">
+      <option name="closed" value="true" />
+      <created>1740752381643</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740752381643</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Test run tests from ci/cd">
+      <option name="closed" value="true" />
+      <created>1740752531924</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740752531924</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
