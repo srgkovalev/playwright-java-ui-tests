@@ -21,6 +21,7 @@ public interface Configuration extends Config {
     @Key("cart.path")
     String cartPath();
 
+    @DefaultValue("chromium")
     String browser();
 
     Boolean headless();

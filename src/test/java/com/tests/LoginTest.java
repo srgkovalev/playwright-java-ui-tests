@@ -12,7 +12,7 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 public class LoginTest extends BaseTest {
 
     @Test
-    public void testLoginPageElements() {
+    public void loginPageElements() {
         getLoginPage().open();
         Map<String, String> expectedAttributes = Map.of(
                 "placeholder", "Username",
@@ -65,7 +65,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void InvalidLoginCredentials() {
+    public void invalidLoginCredentials() {
         getLoginPage().open();
         getLoginPage().loginAs("fake", "fake");
         assertThat(getLoginPage().getErrMsgContainer())
