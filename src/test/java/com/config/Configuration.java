@@ -24,11 +24,14 @@ public interface Configuration extends Config {
     @DefaultValue("chromium")
     String browser();
 
+    @DefaultValue("false")
     Boolean headless();
 
     @Key("slow.motion")
+    @DefaultValue("50")
     int slowMotion();
 
+    @DefaultValue("5000")
     int timeout();
 
     String userName();
