@@ -99,7 +99,7 @@ public final class CartPage extends BasePage {
     }
 
     public CartPage clickOnBackHome() {
-        page.locator("//button[@data-test='back-to-products']").click();
+        page.locator("button[data-test='back-to-products']").click();
         return this;
     }
 }

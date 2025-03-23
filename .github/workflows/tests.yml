@@ -81,4 +81,4 @@ jobs:
             USER_NAME_SESSION: ${{ secrets.USER_NAME_SESSION }}
 
       - name: Run tests with Gradle
-        run: ./gradlew test
+        run: ./gradlew clean test

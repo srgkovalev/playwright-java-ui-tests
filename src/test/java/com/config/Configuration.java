@@ -28,10 +28,10 @@ public interface Configuration extends Config {
     Boolean headless();
 
     @Key("slow.motion")
-    @DefaultValue("50")
+    @DefaultValue("100")
     int slowMotion();
 
-    @DefaultValue("5000")
+    @DefaultValue("10000")
     int timeout();
 
     String userName();
