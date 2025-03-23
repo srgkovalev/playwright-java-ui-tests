@@ -1,8 +1,6 @@
 package com.tests;
 
-import com.components.Header;
 import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.options.LoadState;
 import com.models.ShipInfo;
 import com.pages.CartPage;
 import com.pages.ProductsPage;
@@ -10,7 +8,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static com.config.ConfigurationManager.config;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class CartTest extends BaseTest {
